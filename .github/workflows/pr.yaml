@@ -61,7 +61,7 @@ jobs:
     - name: Determine latest commit in the Galaxy repo
       id: get-galaxy-sha
       run: echo "galaxy-head-sha=$(git ls-remote https://github.com/${{ env.GALAXY_FORK }}/galaxy refs/heads/${{ env.GALAXY_BRANCH }} | cut -f1)" >> $GITHUB_OUTPUT
-    - uses: actions/setup-python@v6
+    - uses: actions/setup-python@v7
       with:
         python-version: ${{ matrix.python-version }}
     - name: Cache .cache/pip
@@ -119,7 +119,7 @@ jobs:
     - uses: actions/checkout@v6
       with:
         persist-credentials: false
-    - uses: actions/setup-python@v6
+    - uses: actions/setup-python@v7
       with:
         python-version: ${{ matrix.python-version }}
     - name: Cache .cache/pip
@@ -189,7 +189,7 @@ jobs:
     - uses: actions/checkout@v6
       with:
         persist-credentials: false
-    - uses: actions/setup-python@v6
+    - uses: actions/setup-python@v7
       with:
         python-version: ${{ matrix.python-version }}
     - name: Cache .cache/pip
@@ -300,7 +300,7 @@ jobs:
     - uses: actions/checkout@v6
       with:
         persist-credentials: false
-    - uses: actions/setup-python@v6
+    - uses: actions/setup-python@v7
       with:
         python-version: ${{ matrix.python-version }}
     - name: Cache .cache/pip
@@ -369,7 +369,7 @@ jobs:
     - uses: actions/download-artifact@v8
       with:
         path: artifacts
-    - uses: actions/setup-python@v6
+    - uses: actions/setup-python@v7
       with:
         python-version: ${{ matrix.python-version }}
     - name: Cache .cache/pip
@@ -416,7 +416,7 @@ jobs:
     - uses: actions/checkout@v6
       with:
         persist-credentials: false
-    - uses: actions/setup-python@v6
+    - uses: actions/setup-python@v7
       with:
         python-version: ${{ matrix.python-version }}
     - name: Cache .cache/pip
