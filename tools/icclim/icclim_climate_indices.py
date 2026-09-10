@@ -264,11 +264,11 @@ def build_icclim_params(args) -> dict:
     """
     # Mandatory parameters
     params: dict = {
-        "in_files":       args.input[0] if len(args.input) == 1 else args.input,
-        "out_file":       args.output,
+        "in_files": args.input[0] if len(args.input) == 1 else args.input,
+        "out_file": args.output,
         "netcdf_version": args.netcdf_version,
         "logs_verbosity": args.logs_verbosity,
-        "slice_mode":     args.slice_mode,
+        "slice_mode": args.slice_mode,
     }
 
     # Optional parameters — included only if provided
@@ -326,7 +326,7 @@ def build_user_index(args) -> dict:
         )
 
     user_index: dict = {
-        "index_name":     args.ui_index_name,
+        "index_name": args.ui_index_name,
         "calc_operation": args.ui_calc_operation,
     }
 
@@ -466,3 +466,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
