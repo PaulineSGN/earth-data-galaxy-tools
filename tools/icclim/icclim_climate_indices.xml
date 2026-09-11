@@ -5,7 +5,7 @@
   Compatible icclim 7.0.5 / xarray 2025.6.1 / xclim 0.60.0
   Phase 4 : <repeat name="indices"> multi-indices, <conditional> user_indice.
 -->
-<tool id="icclim_climate_indices" name="Climate Indices Computation (icclim)" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="23.0">
+<tool id="icclim_climate_indices" name="Climate Indices Computation (icclim)" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="@PROFILE@">
 
     <description>
         Computation of ECA&amp;D and custom climate indices from CF NetCDF files
