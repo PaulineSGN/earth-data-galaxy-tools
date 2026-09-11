@@ -610,7 +610,7 @@ true
         </data>
         <!-- Collection output — splits enabled, or multiple file groups -->
         <collection name="output_collection" type="list"
-                    label="Computed climate indices — collection (icclim ${tool.version})">
+                    label="Computed climate indices">
             <filter>split_by_file or split_by_index or len(file_groups) > 1</filter>
             <discover_datasets pattern="(?P&lt;name&gt;.+)\.nc"
                                directory="output_split" format="netcdf" />
