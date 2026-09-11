@@ -463,24 +463,30 @@ true
                        type="text"
                        optional="true"
                        label="Time range start (YYYY-MM-DD)"
-                       help="E.g. 1990-01-01. Leave empty to use the full series." />
+                       help="E.g. 1990-01-01. Leave empty to use the full series." >
+                       <validator type="regex">^(\d{4}-\d{2}-\d{2})?$</validator>
+                </param>
                 <param name="time_range_end"
                        type="text"
                        optional="true"
                        label="Time range end (YYYY-MM-DD)"
-                       help="E.g. 2020-12-31. Must be set if start is set." />
-
+                       help="E.g. 2020-12-31. Must be set if start is set." >
+                       <validator type="regex">^(\d{4}-\d{2}-\d{2})?$</validator>
+                </param>
                 <param name="base_period_start"
                        type="text"
                        optional="true"
                        label="Base period start (for TX90p, TN10p… YYYY-MM-DD)"
-                       help="Reference period for percentile-based indices. E.g. 1961-01-01." />
+                       help="Reference period for percentile-based indices. E.g. 1961-01-01." >
+                       <validator type="regex">^(\d{4}-\d{2}-\d{2})?$</validator>
+                </param>
                 <param name="base_period_end"
                        type="text"
                        optional="true"
                        label="Base period end (YYYY-MM-DD)"
-                       help="E.g. 1990-12-31." />
-
+                       help="E.g. 1990-12-31." >
+                       <validator type="regex">^(\d{4}-\d{2}-\d{2})?$</validator>
+                </param>
                 <param name="only_leap_years"
                        type="boolean"
                        checked="false"
