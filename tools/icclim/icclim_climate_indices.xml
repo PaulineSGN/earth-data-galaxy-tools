@@ -8,7 +8,7 @@
 <tool id="icclim_climate_indices" name="Climate Indices Computation (icclim)" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="@PROFILE@">
 
     <description>
-        Computation of ECA&amp;D and custom climate indices from CF NetCDF files
+        from CF NetCDF files
     </description>
 
     <macros>
