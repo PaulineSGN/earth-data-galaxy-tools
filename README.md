@@ -1,6 +1,6 @@
 # Galaxy for Earth System Sciences (GESS)
 
-<img src="https://github.com/earth-data-community/.github/blob/main/profile/logos/GESS_logo.png" alt="GESS logo" width="120" style="display: inline-block; margin: 0 15px; vertical-align: middle;" />
+<img src="https://github.com/earth-data-community/.github/blob/main/profile/logos/GESS_logo.png" alt="GESS logo" width="150" style="display: inline-block; margin: 0 15px; vertical-align: middle;" />
 
 # Earth Data community
 
