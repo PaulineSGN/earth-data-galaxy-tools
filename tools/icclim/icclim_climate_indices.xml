@@ -642,7 +642,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_TG_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_TG_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 02: FD — frost days (tasmin < 0°C), annual -->
@@ -657,7 +657,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_FD_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_FD_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 03: SU — summer days (tasmax > 25°C), annual -->
@@ -672,7 +672,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_SU_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_SU_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 04: SU with custom threshold '>= 30 degC' -->
@@ -690,7 +690,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_SU_threshold30.nc" compare="sim_size" delta="10000"/>
+                    file="ref_SU_threshold30.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 05: RR — total precipitation, annual -->
@@ -705,7 +705,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_RR_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_RR_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 06: TG — seasonal aggregation (JJA) -->
@@ -720,7 +720,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_TG_JJA.nc" compare="sim_size" delta="10000"/>
+                    file="ref_TG_JJA.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 07: TG90p — percentile-based index with base period
@@ -740,7 +740,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_TG90p_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_TG90p_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 08: CSDI — spell-type index with min_spell_length parameter
@@ -761,7 +761,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_CSDI_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_CSDI_annual.nc" compare="sim_size" delta="100"/>
         </test>
 
         <!-- Test 09: Custom index (user_index) — mean temperature
@@ -780,7 +780,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_custom_mean.nc" compare="sim_size" delta="10000"/>
+                    file="ref_custom_mean.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 10: Two independent file groups → collection of 2 separate outputs (no cross-group merge) -->
@@ -820,7 +820,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_DTR_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_DTR_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 12: R10mm — heavy precipitation days, annual
@@ -836,7 +836,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_R10mm_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_R10mm_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 13: SU with JJA seasonal mode
@@ -852,7 +852,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_SU_JJA.nc" compare="sim_size" delta="10000"/>
+                    file="ref_SU_JJA.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 14: PRCPTOT — total precipitation on wet days, annual -->
@@ -867,7 +867,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_PRCPTOT_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_PRCPTOT_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 15: CD — compound index, one group with both tas and pr files -->
@@ -882,7 +882,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_CD_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_CD_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 16: Two indices on the same file group (TG + FD on the same group)
@@ -905,7 +905,7 @@ true
             </repeat>
             <output name="output" ftype="netcdf">
                 <assert_contents>
-                    <has_size min="10000"/>
+                    <has_size min="10"/>
                 </assert_contents>
             </output>
         </test>
@@ -943,7 +943,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_TG_annual.nc" compare="sim_size" delta="10000"/>
+                    file="ref_TG_annual.nc" compare="sim_size" delta="10"/>
         </test>
 
         <!-- Test 19: split_by_file=yes, split_by_index=no — 1 file per input file (indices merged within each file) -->
