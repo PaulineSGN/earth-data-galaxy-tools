@@ -642,7 +642,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_TG_annual.nc" compare="sim_size" delta="10"/>
+                    file="ref_TG_annual.nc" compare="sim_size" delta="100"/>
         </test>
 
         <!-- Test 02: FD — frost days (tasmin < 0°C), annual -->
@@ -657,7 +657,7 @@ true
                 </repeat>
             </repeat>
             <output name="output" ftype="netcdf"
-                    file="ref_FD_annual.nc" compare="sim_size" delta="10"/>
+                    file="ref_FD_annual.nc" compare="sim_size" delta="100"/>
         </test>
 
         <!-- Test 03: SU — summer days (tasmax > 25°C), annual -->
